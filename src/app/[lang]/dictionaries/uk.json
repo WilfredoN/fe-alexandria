@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "login": {
+      "heading": "Авторизація",
+      "input": {
+        "login": "логін (або електронна пошта)",
+        "password": "Пароль"
+      },
+      "button": {
+        "submit": "Увійти",
+        "register": "Зареєструватися"
+      },
+      "error": {
+        "invalidCredentials": "Невірний логін або пароль",
+        "userNotFound": "Користувача не знайдено"
+      }
+    },
+    "register": {
+      "heading": "Реєстрація",
+      "input": {
+        "fullName": "Повне ім'я",
+        "email": "Електронна пошта",
+        "password": "Пароль",
+        "confirmPassword": "Підтвердіть пароль"
+      },
+      "button": {
+        "submit": "Зареєструватися",
+        "login": "Увійти"
+      },
+      "error": {
+        "userExists": "Користувач вже існує",
+        "invalidData": "Невірні реєстраційні дані"
+      }
+    }
+  }
+}

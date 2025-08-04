@@ -1,0 +1,36 @@
+{
+  "auth": {
+    "login": {
+      "heading": "Authorization",
+      "input": {
+        "login": "login (or email)",
+        "password": "Password"
+      },
+      "button": {
+        "submit": "Login",
+        "register": "Register"
+      },
+      "error": {
+        "invalidCredentials": "Invalid login or password",
+        "userNotFound": "User not found"
+      }
+    },
+    "register": {
+      "heading": "Registration",
+      "input": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "button": {
+        "submit": "Register",
+        "login": "Login"
+      },
+      "error": {
+        "userExists": "User already exists",
+        "invalidData": "Invalid registration data"
+      }
+    }
+  }
+}
