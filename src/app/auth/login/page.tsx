@@ -11,21 +11,36 @@ export default async function LoginPage({
   const dict = await getDictionary(lang)
 
   return (
-    <form className="flex flex-col gap-4">
-      <h1 className="text-2xl font-bold">{dict.auth.login.heading}</h1>
-      <input
-        type="email"
-        placeholder={dict.auth.login.input.login}
-        className="input"
-      />
-      <input
-        type="password"
-        placeholder={dict.auth.login.input.password}
-        className="input"
-      />
-      <button type="submit" className="btn">
-        Login
-      </button>
-    </form>
+    <div>
+      <form className="flex flex-col items-center gap-4">
+        <h1 className="font-sans text-4xl">{dict.auth.login.heading}</h1>
+        <input
+          type="email"
+          autoComplete="email"
+          placeholder={dict.auth.login.input.login}
+          className="input bg-primary h-12 w-full max-w-72 rounded-4xl p-4 text-white"
+        />
+        <input
+          type="password"
+          autoComplete="current-password"
+          placeholder={dict.auth.login.input.password}
+          className="input bg-primary h-12 w-full max-w-72 rounded-4xl p-4 text-white"
+        />
+        <button
+          type="submit"
+          className="bg-secondary rounded-3xl px-6 py-2 text-2xl text-white"
+        >
+          Login
+        </button>
+      </form>
+      <div className="mt-4">
+        <p className="text-center text-sm">
+          Don't have an account?{" "}
+          <a href="/auth/register" className="text-primary">
+            Register
+          </a>
+        </p>
+      </div>
+    </div>
   )
 }
